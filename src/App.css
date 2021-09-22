@@ -1,0 +1,27 @@
+@import url('https://fonts.google.com/specimen/Red+Hat+Display');
+
+html {
+    /* Primary colors*/
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* Neutral colors*/
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    /* active state colors */
+    --hover-light: slateblue;
+    --hover-dark : var(--dark-blue);
+
+    box-sizing:border-box;
+    font-size: 16px;
+    --max: calc(1440px/4);
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+    font-size: clamp(1rem, 2vh, 1.5rem);
+    background-color: var(--pale-blue);
+}
